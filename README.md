@@ -22,9 +22,9 @@ Each problem gets:
 
 ## Progress
 
-- [ ] Big O Notation
-- [ ] Analyzing Performance of Arrays & Objects
-- [ ] Problem-Solving Approach & Patterns (frequency counter, multiple pointers, sliding window, divide & conquer)
+- [x] Big O Notation
+- [x] Analyzing Performance of Arrays & Objects
+- [x] Problem-Solving Approach & Patterns (frequency counter, multiple pointers, sliding window, divide & conquer)
 - [ ] Recursion (core problems + bonus challenging set)
 - [ ] Searching Algorithms (linear, binary, naive string search)
 - [ ] Sorting (bubble, selection, insertion, merge, quick, radix)
