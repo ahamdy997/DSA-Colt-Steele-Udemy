@@ -15,10 +15,10 @@ I solve each problem in **TypeScript** and **Go**: TypeScript because it's my da
 
 ## What a solution looks like
 
-Each problem gets:
+Each problem gets its own folder, named after the pattern and the problem:
 
-- a TypeScript version in `typescript/<topic>/`, with the problem statement, my approach, the solution and its time and space complexity, plus a matching `<name>.test.ts`
-- a Go version in `go/<topic>/`, same contents, plus a matching `<name>_test.go`
+- a TypeScript version in `src/typescript/<Pattern><Problem>/`: a README.md with the problem statement, an index.ts with my approach, the solution and its time and space complexity, and an index.test.ts with the tests
+- a Go version in `go/`, following the same folder-per-problem layout
 
 ## Progress
 
@@ -40,29 +40,24 @@ Each problem gets:
 ## Structure
 
 ```
-typescript/          # TypeScript solutions, one folder per topic
-  problem-solving-patterns/
-  recursion/
-  searching/
-  sorting/
-  singly-linked-list/
-  ...
-go/                  # the same topics as Go packages
-  problemsolvingpatterns/
-  recursion/
-  searching/
-  sorting/
-  singlylinkedlist/
-  ...
+src/
+  typescript/
+    FrequencyCounterValidAnagram/
+      README.md        # problem statement
+      index.ts         # solution
+      index.test.ts    # tests
+    MultiplePointersCountUniqueValues/
+      ...
+go/                    # Go versions, same folder-per-problem layout (not started yet)
 ```
 
 ## Running the tests
 
-TypeScript (Node 22.18 or newer, no install step: Node runs the .ts files directly):
+TypeScript (Jest with ts-jest):
 
 ```
-cd typescript
-node --test
+npm install
+npm test
 ```
 
 Go (from the go/ module, once the first solution is added):
