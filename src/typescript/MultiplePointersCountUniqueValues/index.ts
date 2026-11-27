@@ -6,6 +6,7 @@ export default function countUniaueValueSpaceOfn(arr: number[]): number {
     return arrSet.size;
 }
 
+// solution 2 time: O(n) and space: O(1)
 export function countUniaueValueSpaceOf1(arr: number[]): number {
     if(arr.length === 0) return 0;
     let uniqueValuesCount = 1, i = 0, j = i + 1;
