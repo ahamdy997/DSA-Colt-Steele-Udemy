@@ -1,3 +1,5 @@
+// time: O(n)
+// Space: O(n)
 function validAnagram (str1: string, str2: string) :boolean{
     let str1Length = str1.length, str2Length = str2.length;
     if( str1Length !== str2Length ) return false;
